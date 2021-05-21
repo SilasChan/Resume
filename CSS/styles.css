@@ -87,6 +87,17 @@ body {
 
 }
 
+@media (max-width: 540px) {
+    .top-cloud {
+        margin-left: 120px;
+        margin-bottom: 30px;
+    }
+    .bottom-cloud {
+        margin-right: 300px;
+    }
+}
+
+
 h1 {
     font-size: 562.5%;
     margin: 50px auto 0 auto;
@@ -151,8 +162,7 @@ a:hover {
 }
 
 .about-title {
-    padding-left: 270px;
-    margin: 20px;
+    text-align: center;
 }
 
 .myself-picture {
@@ -203,22 +213,7 @@ a:hover {
 
 
 
-.btn-info {
-    background-color: #30E3CB;
-    border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-}
 
-.btn:hover {
-    background: #30E3CB;
-    background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
-    background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
-    background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
-    background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
-    background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
-    text-decoration: none;
-}
 
 .skills-area {
     display: flex;
@@ -261,13 +256,14 @@ a:hover {
 .project-section {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0;
 }
 
 .contact-me {
     background-color:#e4f9f5;
+    padding: 30px;
 }
 
 .input {
@@ -293,7 +289,7 @@ label {
   }
 
 .btn {
-    background-color: hsl(200, 100%, 30%);
+    background-color: hsl(177, 76%, 54%);
     border: 1px solid hsl(200, 100%, 10%);
     border-radius: 0.3em;
     cursor: pointer;
@@ -304,6 +300,6 @@ label {
   
 .btn:hover,
 .btn:focus {
-    background-color: hsl(200, 100%, 20%);
+    background-color: hsl(177, 76%, 48%);
     box-shadow: 0 0 5px 0 hsl(200, 100%, 10%);
 }
