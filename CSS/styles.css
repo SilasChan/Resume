@@ -137,19 +137,7 @@ a:hover {
 
 .top-container {
     background-color: #e4f9f5;
-    /* position: relative; */
     padding-top: 100px;    
-}
-
-.top-cloud {
-    margin-left: 300px;
-    margin-bottom: 80px;
-    
-}
-
-
-.bottom-cloud {
-    padding-right: 480px;
 }
 
 .mountain {
