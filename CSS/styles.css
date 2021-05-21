@@ -88,13 +88,8 @@ body {
 }
 
 @media (max-width: 540px) {
-    .top-cloud {
-        margin-left: 120px;
-        margin-bottom: 30px;
-    }
-    .bottom-cloud {
-        margin-right: 300px;
-    }
+    
+    
 }
 
 
@@ -226,16 +221,29 @@ a:hover {
 }
 
 .fab {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding: 15px;
 }
-.skill-bar {
+.skills-bar {
     position: absolute;
     height: 0.25rem;
     background-color: blue;
-    width: 40%;
+    width: 75%;
     top: 2.5em;
+    margin-top: 30px;
+    margin-left: 16px;
+}
+.skills-html {
+    width: 75%;
 }
 
+.skills-js {
+    width:50%
+}
+
+.skills-css {
+    width:60%
+}
 .computer-img {
     width: 30%;
     margin-left: 20px;
