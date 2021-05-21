@@ -10,44 +10,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b585083399.js" crossorigin="anonymous"></script>
+    <script src="./JS/script.js" defer></script>
     <title>Silas Chan</title>
 </head>
 <body>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Silas</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">About</a>
-          <a class="nav-link" href="#">Skills</a>
-          <a class="nav-link" href="#">Project</a>
-
-        </div>
-      </div>
+  <!--Kyle's navbar-->
+  <nav class="nav">
+    <span class="name">Silas</span>
+    <ul class="link-list">
+      <div class="icon cancel-btn">
+        <i class="fas fa-times"></i>
+    </div>
+      <li class="link"><a href="#" ">Home</a></li>
+      <li class="link"><a href="#" ">About</a></li>
+      <li class="link"><a href="#" ">Skills</a></li>
+      <li class="link"><a href="#" ">Project</a></li>
+    </ul>
+    <div class="icon link-btn">
+      <i class="fas fa-bars"></i>
     </div>
   </nav>
+
 </header>
 
-  <section class="section">
+  
     <div class="top-container">
         <img class="top-cloud"src="./Images/cloud.png" alt="cloud">
         <h1>I'm Silas</h1>
         <h2>a programmer.</h2>
-        <img class="bottom-cloud" src="./Images/cloud.png" alt="cloud">
-        <img src="./Images/mountain.png" alt="mountain">
-
-    </div>
-  </section> 
+        <div>
+          <img class="bottom-cloud" src="./Images/cloud.png" alt="cloud">
+        </div>
+        <img class="mountain"src="./Images/mountain.png" alt="mountain">
+      </div>
+    
+  
     <main>
       <div class="middle-container">
         <section class="section">
           <div class="about">
-              <h2>About</h2>
+              <h2 class="about-title">About</h2>
               <img class="myself-picture" src="./Images/circle-cropped.png" alt="">
               <p>I'm a Web Developer. Seeking a challenging career with a progressive organisation that provides an opportunity to capitalise my technical skills and abilities in the field of Web programming. Actively learning fundamental knowledge of Web programming by using JavaScript, HTML, CSS and to create a simple game. </p>
             </div>
@@ -56,7 +59,7 @@
         <section class="section">
               <div class="skills">
                 <h2>Skills</h2>
-                  <div class="skill-row">
+                  <div class="skills-row">
                     <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
                     <div class="skills-area">
                       <div class="skills-outer">
@@ -104,11 +107,6 @@
                       </div>
                       <img class="computer-img" src="./Images/web-programming.png" alt="">
                     </div>
-
-                    
-                    
-                    
-                    
               </div>
         </section>
 
@@ -159,5 +157,9 @@
         <p class="copyright">© 2021 Silas Chan.</p>
       </div>
       
+
+     
+
+
 </body>
 </html>

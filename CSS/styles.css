@@ -6,9 +6,85 @@ body {
     text-align:center;
     font-family: 'Merriweather', serif;
 }
-
-.navbar {
+/* --------nav----------*/
+.nav {
     background-color: #66bfbf;
+    color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5rem;
+    height: 50px;
+}
+.name {
+    margin-left: 20px;
+}
+.link-list {
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+
+.link {
+    padding: .5rem;
+}
+
+.link:hover {
+    background-color: #777;
+}
+
+.link a {
+    color: inherit;
+    text-decoration: none;
+    font-family:'Montserrat', sans-serif;
+}
+
+.icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn {
+    position:absolute;
+    left: 30px;
+    top: 20px;
+}
+
+@media (max-width: 868px) {
+    /* --------nav----------*/
+    .icon {
+        display: block;
+    }
+    .icon.hide {
+        display:none;
+    }
+    .nav .link-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: #66bfbf;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .nav .link-list.active {
+        left: 0%;
+    }
+    .nav .link-list li {
+        margin-top: 45px;
+    }
+    .nav .link-list li a {
+        font-size: 23px;
+    }
+    /* --------top contianer----------*/
+
+
 }
 
 h1 {
@@ -36,13 +112,6 @@ p {
     line-height: 2;
 }
 
-hr {
-    border: dotted;
-    color: #EAF6F6 6px;
-    border-bottom: none;
-    width: 4%;
-    margin: 100px auto;
-}
 
 a {
     color: #11999E;
@@ -57,17 +126,33 @@ a:hover {
 
 .top-container {
     background-color: #e4f9f5;
-    position: relative;
+    /* position: relative; */
     padding-top: 100px;    
 }
+
+.top-cloud {
+    margin-left: 300px;
+    margin-bottom: 80px;
+    
+}
+
+
+.bottom-cloud {
+    padding-right: 480px;
+}
+
+.mountain {
+    width: 50%;
+}
+
 
 .middle-container {
     background-color: #e4f9f5; 
 }
 
-.bottom-container {
-    background-color: #66bfbf;
-    padding: 50px 0 20px;
+.about-title {
+    padding-left: 270px;
+    margin: 20px;
 }
 
 .myself-picture {
@@ -75,6 +160,14 @@ a:hover {
     float: left;
     margin-right: 30px;
 }
+
+
+.bottom-container {
+    background-color: #66bfbf;
+    padding: 50px 0 20px;
+}
+
+
 
 .intro {
     width: 30%;
@@ -93,7 +186,7 @@ a:hover {
 }
 
 
-.skill-row, .about {
+.skills-row, .about {
     width: 50%;
     margin: 0 auto;
     padding: 20px;
@@ -108,24 +201,7 @@ a:hover {
     margin-left: 30px;
 }
 
-.bottom-cloud {
-    position:absolute;
-    left: 200px;
-    bottom: 300px;
-}
 
-.top-cloud {
-    position: absolute;
-    top: 40px;
-    right: 300px;
-    
-}
-
-.bottom-cloud {
-    position: absolute;
-    left: 300px;
-    bottom: 300px;
-}
 
 .btn-info {
     background-color: #30E3CB;
@@ -159,7 +235,6 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    border: dotted 2px;
 }
 
 .skills-name {
@@ -167,12 +242,15 @@ a:hover {
     align-items: center;
 }
 
+.fab {
+    font-size: 3rem;
+}
 .skill-bar {
     position: absolute;
     height: 0.25rem;
     background-color: blue;
     width: 40%;
-    top: 1.5em;
+    top: 2.5em;
 }
 
 .computer-img {
