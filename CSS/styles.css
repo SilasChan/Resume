@@ -1,6 +1,6 @@
 
 body {
-    background-color: #e4f9f5; 
+    background-color: #e4f9f5 !important; 
     color: #40514e;
     margin:0;
     text-align:center;
@@ -110,6 +110,10 @@ body {
     h2 {
         line-height: 3 !important;
     }
+    .project-section {
+        padding: 0;
+
+    }
 }
 
 h1 {
@@ -165,6 +169,10 @@ a:hover {
     background-color: #e4f9f5; 
 }
 
+.section-about {
+    margin: 2rem;
+}
+
 .about-title {
     text-align: center;
 }
@@ -205,13 +213,16 @@ a:hover {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    text-align: left;
-    line-height: 2;
+    text-align: center;
+    /* line-height: 2; */
 }
 
 
 /* --------Skills--------*/
 
+.section-skills {
+    margin: 2rem;
+}
 
 .skills-outer {
     width: 100%;
@@ -281,7 +292,7 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0;
+    
 }
 
 .project-list-item {
