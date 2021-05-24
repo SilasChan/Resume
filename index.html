@@ -15,7 +15,7 @@
 </head>
 <body>
 <header>
-  <!--Kyle's navbar-->
+  <!--navbar-->
   <nav class="nav">
     <span class="name">Silas</span>
     <ul class="link-list">
@@ -36,91 +36,119 @@
 
   
     <div class="top-container">
-        
-        <h1>I'm Silas</h1>
-        <h2>a programmer.</h2>
-        
-        <img class="mountain"src="./Images/mountain.png" alt="mountain">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>I'm Silas</h1>
+            <h2>a programmer.</h2>
+            
+            <img class="mountain"src="./Images/mountain.png" alt="mountain">
+          </div>
+        </div>
+      </div>  
       </div>
     
   
     <main>
       <div class="middle-container">
         <section class="section">
-          <div class="about">
-              <h2 class="about-title">About</h2>
-              <img class="myself-picture" src="./Images/circle-cropped.png" alt="">
-              <p>I'm a Web Developer. Seeking a challenging career with a progressive organisation that provides an opportunity to capitalise my technical skills and abilities in the field of Web programming.</p>
-            </div>
+          <div class="container">
+            <h2 class="about-title">About</h2>
+            <div class="row">
+              <div class="col-4 myself-picture">
+                <div class="about">
+                    <img class="myself-picture" src="./Images/circle-cropped.png" alt="">    
+                </div>
+              </div>
+              <div class="col-8">
+                <p>I'm a Web Developer. Seeking a challenging career with a progressive organisation that provides an opportunity to capitalise my technical skills and abilities in the field of Web programming.</p>
+              </div>  
+            </div>  
+          </div>  
         </section>  
           
         <section class="section">
-              <div class="skills">
-                <h2>Skills</h2>
-                  <div class="skills-row">
-                    <p> Actively learning fundamental knowledge of Web programming by using JavaScript, HTML, CSS and to create a simple game. </p>
-                    <div class="skills-area">
-                      <div class="skills-outer">
-                        <div class="skills-data">
-                          <div class="skills-name">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                          </div>
-                          <div class="skills-bar skills-html">
-                            
-                          </div>
+          <h2 class="skills">Skills</h2>
+            <div class="container">
+              <div class="row">
+                  <div class="col-8">
+                    <div class="skills-row">
+                        <p> Actively learning fundamental knowledge of Web programming by using JavaScript, HTML, CSS and to create a simple game. </p>
+                        <div class="skills-area">
+                              <div class="skills-outer">
+                                <div class="skills-data">
+                                  <div class="skills-name">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                  </div>
+                                  <div class="skills-bar skills-html">
+                                    
+                                  </div>
 
-                          <div>
-                            <span>75%</span>
-                          </div>
+                                  <div>
+                                    <span>75%</span>
+                                  </div>
+                                </div>
+                        
+                                <div class="skills-data">
+                                  <div class="skills-name">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS</span>
+                                  </div>
+                                  <div class="skills-bar skills-css">
+                                    
+                                  </div>
+
+                                  <div>
+                                    <span>60%</span>
+                                  </div>
+                                </div>
+
+                                <div class="skills-data">
+                                  <div class="skills-name">
+                                    <i class="fab fa-js-square"></i>
+                                    <span>JavaScript</span>
+                                  </div>
+                                  <div class="skills-bar skills-js">
+                                    
+                                  </div>
+
+                                  <div>
+                                    <span>50%</span>
+                                  </div>
+                                </div>
                         </div>
-                      
-                        <div class="skills-data">
-                          <div class="skills-name">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS</span>
-                          </div>
-                          <div class="skills-bar skills-css">
-                            
-                          </div>
-
-                          <div>
-                            <span>60%</span>
-                          </div>
-                        </div>
-
-                        <div class="skills-data">
-                          <div class="skills-name">
-                            <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
-                          </div>
-                          <div class="skills-bar skills-js">
-                            
-                          </div>
-
-                          <div>
-                            <span>50%</span>
-                          </div>
-                        </div>
-                      </div>
-                      <img class="computer-img" src="./Images/web-programming.png" alt="">
                     </div>
-              </div>
+                  </div>
+                  </div>
+                  <div class="col-4 skills-computer">
+                    <img class="computer-img" src="./Images/web-programming.png" alt="">
+                  </div>
+              </div> 
+            </div>
         </section>
 
         <section class="section">
           <div class="project">
             <h2>Project</h2>
-            <ul class="section-content project-section">
-              <li class="project-list-item">
-                <a href="./game.html"><img src="https://source.unsplash.com/xfngap_DToE/150x150" alt=""></a>
-                <div>Game of Life</div>
-              </li>
-              <li class="project-list-item">
-                <a href="./album.html"><img src="https://source.unsplash.com/HeEJU3nrg_0/150x150" alt=""></a>
-                <div>Album</div>
-              </li>
-            </ul>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <ul class="section-content project-section">
+                    <li class="project-list-item">
+                      <a href="./game.html"><img src="https://source.unsplash.com/xfngap_DToE/150x150" alt=""></a>
+                      <div>Game of Life</div>
+                    </li>
+                </div>
+                <div class="col-6">
+                    <li class="project-list-item">
+                      <a href="./album.html"><img src="https://source.unsplash.com/HeEJU3nrg_0/150x150" alt=""></a>
+                      <div>Album</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>  
+            </div>  
           </div>
         </section>
       </div>

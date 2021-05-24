@@ -88,7 +88,10 @@ body {
 }
 
 @media (max-width: 540px) {
-    
+    .fab {
+        font-size: 1rem;
+        padding: 15px;
+    }
     
 }
 
@@ -149,9 +152,9 @@ a:hover {
 }
 
 .myself-picture {
-    width:25%;
-    float: left;
-    margin-right: 30px;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
 }
 
 
@@ -172,15 +175,11 @@ a:hover {
     margin: 40px auto 60px;
 }
 
-.copyright {
-    color: #EAF6F6;
-    font-size: 0.75rem;
-    padding: 20px 0;
-}
+
 
 
 .skills-row, .about {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     text-align: left;
@@ -188,24 +187,13 @@ a:hover {
 }
 
 
-.code-img {
-    width:25%;
-    float: right;
-    margin-left: 30px;
-}
+/* --------Skills--------*/
 
-
-
-
-
-.skills-area {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .skills-outer {
     width: 80%;
+    row-gap: 2rem;
+    text-align: center;
 }
 
 .skills-data {
@@ -213,6 +201,11 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    /* font-weight: var(--font-semi); */
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
 }
 
 .skills-name {
@@ -223,15 +216,19 @@ a:hover {
 .fab {
     font-size: 2.5rem;
     padding: 15px;
+    margin-right: 1rem;
 }
 .skills-bar {
     position: absolute;
+    left: 0;
+    bottom: 0;
     height: 0.25rem;
     background-color: blue;
     width: 75%;
-    top: 2.5em;
-    margin-top: 30px;
-    margin-left: 16px;
+    border-radius: .5rem;
+    border-radius: .5rem;
+    /* margin-top: 30px;
+    margin-left: 16px; */
 }
 .skills-html {
     width: 75%;
@@ -244,11 +241,18 @@ a:hover {
 .skills-css {
     width:60%
 }
+
+.skills-computer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
 .computer-img {
-    width: 30%;
-    margin-left: 20px;
+    width: 10rem;
+    height: 10rem;
 }
 
+/* -------  Projects---------- */
 .project-section {
     list-style: none;
     display: flex;
@@ -257,6 +261,11 @@ a:hover {
     margin: 0;
 }
 
+.project-list-item {
+    list-style: none;
+}
+
+/* ------Contact ----------*/
 .contact-me {
     background-color:#e4f9f5;
     padding: 30px;
@@ -298,4 +307,10 @@ label {
 .btn:focus {
     background-color: hsl(177, 76%, 48%);
     box-shadow: 0 0 5px 0 hsl(200, 100%, 10%);
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
 }
