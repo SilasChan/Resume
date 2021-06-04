@@ -196,9 +196,6 @@ a:hover {
     margin: 40px auto 60px;
 }
 
-
-
-
 .skills-row, .about {
     margin: 0 auto;
     padding: 20px;
@@ -277,9 +274,9 @@ a:hover {
     align-items: center; 
 }
 
-.project-list-item {
+/* .project-list-item {
     list-style: none;
-}
+} */
 
 .project-list-item p {
     margin: 1rem;
