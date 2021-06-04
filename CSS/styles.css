@@ -200,7 +200,6 @@ a:hover {
 
 
 .skills-row, .about {
-    /* width: 100%; */
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -208,10 +207,6 @@ a:hover {
 
 
 /* --------Skills--------*/
-
-/* .section-skills {
-    margin: 2rem;
-} */
 
 .skills-outer {
     width: 100%;
@@ -224,7 +219,6 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    /* font-weight: var(--font-semi); */
     padding: .5rem 1rem;
     margin-bottom: 2rem;
     border-radius: .5rem;
@@ -285,6 +279,11 @@ a:hover {
 
 .project-list-item {
     list-style: none;
+}
+
+.project-list-item p {
+    margin: 1rem;
+    text-decoration: underline;
 }
 
 .work-image {
