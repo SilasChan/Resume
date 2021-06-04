@@ -7,7 +7,9 @@ let  rows; /* To be determined by window height */
 let  currentBoard;
 let  nextBoard;
 let  slider;
-let slider2; 
+// let slider2; 
+
+
 let boardState = [
     [1,1,1,1,1,1,1],
     [1,1,1,1,1,1,1],
@@ -27,10 +29,10 @@ console.log(boardState)
         resizeCanvas(canvasDiv.offsetWidth, canvasDiv.offsetWidth/4*3);
     }
 const canvasDiv=document.querySelector('#canvas')
+
 function setup(){
   /* Set the canvas to be under the element #canvas*/
   const canvas = createCanvas(canvasDiv.offsetWidth, canvasDiv.offsetWidth/4*3);
-  
   canvas.parent(document.querySelector('#canvas'));
   
 
@@ -48,7 +50,7 @@ function setup(){
   // Now both currentBoard and nextBoard are array of array of undefined values.
   init();  // Set the initial values of the currentBoard and nextBoard
   
-  slider = createSlider(1, 10, 1);
+    slider = createSlider(1, 10, 1);
   //slider2 = createSlider(500, 1000);
 }
 
@@ -269,3 +271,7 @@ document.querySelector('.pattern').addEventListener('click', function() {
 // doxument.querySelector('.label-color').addEventListener('click', function() {
 //     alert("1234")
 // })
+
+document.querySelector('.label-color').addEventListener('click', ()=> {
+    alert("1234")
+})

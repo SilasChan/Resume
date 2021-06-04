@@ -9,7 +9,7 @@ body {
 /* --------nav----------*/
 .nav {
     background-color: #66bfbf;
-    color: black;
+    color: #fff;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -39,14 +39,14 @@ body {
     font-family:'Montserrat', sans-serif;
 }
 
-.icon {
+.nav-icon {
     color: #fff;
     font-size: 20px;
     cursor: pointer;
     display: none;
 }
 
-.icon.cancel-btn {
+.cancel-btn {
     position:absolute;
     left: 30px;
     top: 20px;
@@ -54,10 +54,10 @@ body {
 
 @media (max-width: 868px) {
     /* --------nav----------*/
-    .icon {
+    .nav-icon {
         display: block;
     }
-    .icon.hide {
+    .nav-icon.hide {
         display:none;
     }
     .nav .link-list {
@@ -125,11 +125,11 @@ h1 {
 
 h2 {
     font-family:'Montserrat', sans-serif;
+    text-decoration: underline;
     font-size: 2rem;
     color: #66bfbf;
-    font-weight: normal;
-    padding-bottom: 10px;
-    margin-top: 10px;
+    font-weight: bold;
+    margin: 3rem;
 }
 
 h3 {
@@ -138,11 +138,9 @@ h3 {
 }
 
 p {
-    line-height: 2;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-
 }
-
 
 a {
     color: #11999E;
@@ -159,18 +157,12 @@ a:hover {
     background-color: #e4f9f5;
     padding-top: 100px;    
 }
+.photos-area {
+    display: block;
+}
 
 .mountain {
     width: 70%;
-}
-
-
-.middle-container {
-    background-color: #e4f9f5; 
-}
-
-.section-about {
-    margin: 2rem;
 }
 
 .about-title {
@@ -183,18 +175,16 @@ a:hover {
 }
 
 .myself-picture {
-    /* width: 10rem; */
-    height: 10rem;
+    border: transparent;
+    height: 15rem;
     text-align: center;
+    border-radius: 20rem;
 }
-
 
 .bottom-container {
     background-color: #66bfbf;
     padding: 50px 0 20px;
 }
-
-
 
 .intro {
     width: 30%;
@@ -210,19 +200,18 @@ a:hover {
 
 
 .skills-row, .about {
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    /* line-height: 2; */
 }
 
 
 /* --------Skills--------*/
 
-.section-skills {
+/* .section-skills {
     margin: 2rem;
-}
+} */
 
 .skills-outer {
     width: 100%;
@@ -291,12 +280,15 @@ a:hover {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .project-list-item {
     list-style: none;
+}
+
+.work-image {
+    width:80%;
 }
 
 /* ------Contact ----------*/
